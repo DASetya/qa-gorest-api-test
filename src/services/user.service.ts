@@ -11,6 +11,11 @@ export const createUser = (data: any) => {
   return postRequest(endpoint.users, data);
 };
 
+// CREATE USER WITHOUT TOKEN
+export const createUserWithoutToken = (data: any) => {
+  return postRequest(endpoint.users, data, { Authorization: "" });
+};
+
 // DELETE USER
 export const deleteUser = (id: number) => {
   return deleteRequest(`${endpoint.users}/${id}`);

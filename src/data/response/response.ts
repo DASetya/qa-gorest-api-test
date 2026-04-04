@@ -4,4 +4,5 @@ export const statusCode = {
   noContent: 204,
   badRequest: 400,
   unauthorized: 401,
+  dataValidationFailed: 422,
 };
